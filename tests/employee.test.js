@@ -11,7 +11,7 @@ describe("Employee", () => {
         //this can also be written as
         expect(new Employee (e)).toBe("object");
         // expect(typeof(e)).toBe("object");
-        
+
         
     });
 // test for this function
@@ -20,6 +20,7 @@ describe("Employee", () => {
 it("Can set a name with the constructor arguments", () => {
     const name = "Ester";
     const e = new Employee(name);
+    expect(e.name).toBe(name);
 })
 //can set id via constructor args
 //can set email vis constructor args
