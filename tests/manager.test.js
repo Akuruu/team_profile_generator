@@ -1,13 +1,23 @@
 const Manager = require("../lib/manager");
 const Employee = require("../lib/employee");
 
-//can set office number
+//set office number
 describe("Set office number via constructor argument", () => {
-    // say the office number is 100, we're testing that value
     const office = 100;
-    //name, ID, email, office number is test val
-    const e = new Manager("Khona", 1, "khona@rhun.com", office);
-    expect(e.officeNumber).toBe(testVal);
-})
+    const e = new Manager("Ester", 1, "example@test.com", office);
+    expect(e.officeNumber).toBe(office);
+});
 //can get office number
+describe("getOffice", () => {
+    it("Can get office number from getOffice()", () => {
+        const office = 100;
+        const e = new Employee("Azem", 1, "example@test.com");
+        expect(e.getOffice()).toBe(office);
+    })
+});
 //role returns manager
+test("Returns \"Manager\" from getRole()", () => {
+    const testValue = "Manager";
+    const e = new Manager("Azem", 1, "example@test.com", 100);
+    expect(e.getRole()).toBe(testValue);
+  });
