@@ -1,0 +1,16 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card-title {
+    color: #1A3C40;
+}
+
+.list-group-item {
+    background-color: #EDE6DB;
+}
