@@ -23,6 +23,10 @@ it("Can set a name with the constructor arguments", () => {
     expect(e.name).toBe(name);
 })
 //can set id via constructor args
+it("Can set an id with the constructor arguments",() => {
+    const id = "";
+    
+})
 //can set email vis constructor args
 //can set name via construction function
 //can set id via constructor function
