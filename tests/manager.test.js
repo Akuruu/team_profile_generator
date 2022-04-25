@@ -11,12 +11,12 @@ describe("Set office number from constructor argument", () => {
 describe("getOffice", () => {
     it("Can get office number from getOffice()", () => {
         const office = 100;
-        const e = new Employee("Ester", 1, "example@test.com");
+        const e = new Manager("Ester", 1, "example@test.com", office);
         expect(e.getOffice()).toBe(office);
     })
 });
 //role returns manager
-describe("Returns \"Manager\" from getRole()", () => {
+describe("Returns Manager from getRole()", () => {
     const title = "Manager";
     const e = new Manager("Ester", 1, "example@test.com", 100);
     expect(e.getRole()).toBe(title);
