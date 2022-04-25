@@ -17,7 +17,7 @@ describe("getOffice", () => {
 });
 //role returns manager
 test("Returns \"Manager\" from getRole()", () => {
-    const testValue = "Manager";
+    const title = "Manager";
     const e = new Manager("Azem", 1, "example@test.com", 100);
-    expect(e.getRole()).toBe(testValue);
+    expect(e.getRole()).toBe(title);
   });
