@@ -11,12 +11,12 @@ describe("Set school name from constructor argument", () => {
 describe("getSchool", () => {
     it("Can get school name from getSchool()", () => {
         const school = "existing university of tests";
-        const e = new In("Ester", "example@test.com", school);
+        const e = new Intern("Ester", "example@test.com", school);
         expect(e.getSchool()).toBe(school);
     })
 });
 //role returns intern
-describe("Returns \"Intern\" from getRole()", () => {
+describe("Returns Intern from getRole()", () => {
     const title = "Intern";
     const e = new Intern("Ester", "example@test.com", school);
     expect(e.getRole()).toBe(title);
