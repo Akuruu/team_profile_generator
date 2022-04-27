@@ -1,7 +1,7 @@
 // require the employee from the lib folder
 const { it, expect } = require("@jest/globals");
 const { describe } = require("yargs");
-const Employee = require("../lib/employee");
+const Employee = require("../lib/Employee");
 
 //test can begin employee instance
 describe("Employee", () => {
@@ -25,7 +25,7 @@ describe("Employee", () => {
     //can set email vis constructor args
     it("Can set an email with the constructor argument", () => {
         const email = "example@test.com";
-        const e = new Employee("Azem", 5, email);
+        const e = new Employee("Azem", 1, email);
         expect(e.id).toBe(id);
     });
 
@@ -42,7 +42,7 @@ describe("getName", () => {
 describe("getId", () => {
     it("Can get id from getId()", () => {
         const id = 100;
-        const e = new Employee("Azem", 5);
+        const e = new Employee("Azem", 1);
         expect(e.getId()).toBe(id);
     })
 });
@@ -50,15 +50,15 @@ describe("getId", () => {
 describe("getEmail", () => {
     it("Can get email from getEmail()", () => {
         const email = "example@test.com";
-        const e = new Employee("Azem", 5, email);
+        const e = new Employee("Azem", 1, email);
         expect(e.getEmail()).toBe(email);
     })
 });
 // role function should return employee
 describe("getRole", () => {
-    it("Can get employee information from getRole()", () => {
+    it("Returns \"Employee\" from getRole()", () => {
         const title = "Employee";
-        const e = new Employee("Azem", 5, "example@text.com");
+        const e = new Employee("Azem", 1, "example@text.com");
         expect(e.getRole()).toBe(title);
     })
 });
